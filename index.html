@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="assets\bootstrap-5.3.2-dist ">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 
   <title>Education App</title>
 </head>
@@ -105,22 +107,25 @@
       </table>
     </section>
   
-    <section>
-      <h2>Interactive Quiz</h2>
+    <section class="container mt-5">
+      <h2 class="text-center mb-4">Interactive Quiz</h2>
       <form id="quizForm">
         <div class="mb-3">
           <label for="question1" class="form-label">What does HTML stand for?</label>
           <input type="text" id="question1" name="question1" class="form-control" required>
         </div>
-  
+    
         <div class="mb-3">
           <label for="question2" class="form-label">What is the purpose of CSS?</label>
           <textarea id="question2" name="question2" class="form-control" rows="1" required></textarea>
         </div>
-  
-        <button type="submit" class="btn btn-primary">Submit Answers</button>
+    
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary btn-lg">Submit Answers</button>
+        </div>
       </form>
     </section>
+    
     <section>
       <h2>Audio</h2>
       <audio controls>
